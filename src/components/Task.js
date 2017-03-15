@@ -9,12 +9,12 @@ class Task extends Component {
         <Row>
           <Col xs={1}>
             <div>
-              <p style={{textAlign: 'center', fontWeight: 'bold', paddingTop: '10px'}}>8<br /><span>AM</span></p>
+              <p style={{textAlign: 'center', fontWeight: 'bold', paddingTop: '10px'}}>{this.props.time}<br /><span>{this.props.period}</span></p>
             </div>
           </Col>
           <Col xs={10}>
-            <h4 id="activity-title">Test Todo</h4>
-            <p>Testing todo list</p>
+            <h4>{this.props.activity_title}</h4>
+            <p>{this.props.activity_description}</p>
           </Col>
           <Col xs={1}>
             <Row style={{paddingTop: '10px'}}>
